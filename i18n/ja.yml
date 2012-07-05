@@ -1,0 +1,232 @@
+runner:
+  options:
+    banner: "使い方: rubywarrior [オプション]"
+    directory: あたえられたディレクトリで実行
+    level: 英雄経験レベル
+    skip: 入力スキップ
+    time: 毎回指定秒おくらす
+    help: これを出す
+welcome: ようこそRubyウォリアーへ
+directory:
+  not_found: rubywarrior ディレクトリが見つからない。新しく作くる？
+  cannot_continue: ディレクトリがないと、続けることができない。
+practice_level:
+  unable_not_in_epic_mode: 英雄モードでないとレベルをやることができない。-l オプションを外そう。
+first_level_generated: はじめの レベルの準備ができた。rubywarrior/%1/README ファイルに書いてある説明を読もう。
+mode:
+  back_to_normal: 英雄をはじめてから ほかのレベルが追加された。ノーマルモードにもどる。
+level:
+  level: レベル
+  number: "レベル %1:"
+  starting: レベル%1はじめ
+  failed: 残念。レベル%1に失敗した。スクリプトをかえて、もう一度挑戦しよう。
+  clues: このレベルのヒントを読む？
+  continue_next: 次のレベルを続ける？
+  continue_epic_mode: 英雄モードを続ける？
+  staying_on_current: レベルアップしなかった。次はもっといぱいポイントを かく得しよう。
+  to_practice: "レベルを えらぶ ときは、 -l オプションを使う:  rubywarrior -l 3"
+  score: レベルスコア
+  grade: レベルグレード
+  beginner: 初心者
+  intermediate: 中級者
+  short: ショート
+  tower: タワー
+profile:
+  profile: プロフィール
+  new: 新しいプロフィール
+  replace_existing_for_tower: このタワーのプロフィールをかえるよ。いいかな？
+  replace_existing: プロフィールの変更。
+  not_replacing: プロフィールの変更なし。
+stairs:
+  stairs: 階段
+  found: やった！階段だ。
+end_of_game: おめでとう！ タワーの頂上だ。そして、美しいおとめのルビーを助けだす ことが できた。
+readme:
+  see_updated: 新しい rubywarrior/%1 ディレクトリのREADME を読もう。
+to_play_epic_mode: rubywarrior をもう一度動かして英雄モードをやろう。
+game:
+  tower: タワー
+  average_grade_for_tower: "平均グレード: %1 "
+warrior:
+  warrior: warrior
+  enter_name: "戦士の名前を入力： "
+  earns_points: "は %1ポイントかく得"
+  does_nothing: は何もしない
+  abilities: 戦士の能力
+score: 
+  score: スコア
+  epic: 英雄スコア
+  first: 最初のスコア
+  total: 総合スコア
+answer:
+  yes_no: yn
+  yes_initial: y
+  no_initial: n
+item:
+  choose_typing_number: "数字を入力して%1を選ぶ: "
+turn: 回
+only_one_turn: 一回にひとつの動作だけしかできない。
+bonus:
+  time: タイムボーナス
+  clear: クリアボーナス
+wall: かべ
+nothing: なにもない
+sludge:
+  name: モンスター
+  first_letter: m
+archer:
+  name: 射手
+  first_letter: i
+thicksludge:
+  name: 巨大モンスター
+  first_letter: M
+captive:
+  name: 味方
+  first_letter: C
+wizard:
+  name: 魔法使い
+  first_letter: w
+golem:
+  name: ゴーレム
+  first_letter: G
+  abilities: ゴーレムの能力
+take_damage_health_left: "は%1ダメージを受けた。 残り%2ヘルスパワー"
+player:
+  dies: は たおれた
+  released_from_bonds: は開放された
+direction:
+  unknown: "%1という方向は知らない。方向は、 :forward（前）, :backward（後）, :left（左） または :right（右）でないとならない。"
+  move_forward_default: あたえられた方向に歩く（方向をあたえないとforward（前））。
+  bumps_into: は次のものにぶつかる：
+  forward: 前
+  backward: 後
+  left: 左
+  right: 右
+walk:
+  walk: は次の方向へ歩く：
+  s: は次の方向へ歩く：
+attack:
+  in_given_direction: あたえられた方向の敵などのユニットをこうげきする（方向をあたえないとforward（前））。
+  and_hits: "は%1をこうげき。%2に命中"
+  and_hits_nothing: "は%1をこうげき。命中しない"
+feel:
+  description: あたえられた方向の１つの区域を返す。（方向をあたえないとforward（前））。
+rest:
+  description: 最大ヘルスの10%を取りもどす。ほかは なにもしない。
+  receives_health: "休けいで%1ヘルス受け取る。最大ヘルス%2まで"
+  fit_fiddle: はすでに元気最大
+health:
+  description: ヘルス数を返えす。
+look:
+  description: あたえられた方向の最大３区域の配列を返す。（方向をあたえないとforward（前））。
+shoot:
+  description: あたえれた方向にうち放つ（方向をあたえないとforward（前））。
+  and_hits: "は%1に向けてうち放つ。%2に命中"
+  and_hits_nothing: "はうち放つ。命中しない"
+rescue:
+  description: あたえられた方向にいる味方を開放して20ポイントかく得する（方向をあたえないとforward（前））。
+  unbinds_and_rescues: は%1の くさりをとく。%2を開放
+  unbinds_and_rescues_nothing: は%1の くさりをとく。何も開放しない
+rotate:
+  description: :left（左） :right（右） または :backward（後：方向をあたえないとき）に、向きをかえる。
+  pivots: は次の方向へ向きをかえる：
+distance_of:
+  description: 区域を引数としてわたすと、その区域までの距離が返る。
+bind:
+  description: あたえられた方向の敵などのユニットをしばって動けなくする（方向をあたえないとforward（前））。
+  and_restricts: は%1のユニットをしばる。%2をこう束
+  and_restricts_nothing: は%1のユニットをしばる。何もこう束できない
+listen:
+  description: 敵や味方などのユニットがあるすべての区域の配列を返す。
+direction_of_stairs:
+  description: 階段のある方向を返す (:left（左）, :right（右）, :forward（前）, :backward（後）)。
+direction_of: 
+  description: 区域を引数としてわたすと、その区域への方向（:left（左）, :right（右）, :forward（前）, :backward（後ろ）)が返る。
+explode: 
+  description: まわりの敵などのユニットと一緒に自滅してたおれる。こうは ならないことを望む。
+  collapsing_the_ceiling: の時限爆弾が爆発。天井が崩れて、敵をふくむ すべてのユニットがダメージを受ける
+  is_ticking: の時限爆弾がカチカチしている
+detonate: 
+  description: あたえられた方向へ爆弾を爆発させる。戦士を含めてまわりの４つの区域がダメージを受ける（方向があたえられないとForward（前）)。
+  bomb_deadly_explosion: は%1を爆破
+  ticking_explosive: は爆発に巻き込まれる
+form:
+  description: ヘルスの半分を使い、あたえられた方向に ゴーレム（泥の魔神）を作る。ゴーレムの回ごとに、ブロックが実行される。
+  golem_gives_health: "は%1に ゴーレムを作る。 ヘルスの半分（%2）をゴーレムにあたえる"
+  fails: 何かがじゃまして ゴーレムを作るのに失敗した。
+tip: ヒント
+hp: HP（ヘルスポイント）
+when_you_are_done_run_rubywarrior: player.rbを編集し終わったら、もう一度 rubywarrior コマンドを動かそう。
+add_your_code_here: この後にコードを追加
+towers: 
+  beginner: 
+    level_001: 
+      description: 目の前に長い廊下。その廊下の向こうには階段がある。階段まで さえぎるものは なにも ない。
+      tip: Player 'play_turn'メソッドの中から、warrior.walk! を呼び出して前へ進む。
+    level_002:
+      description: 暗くて何も見えない。でも 近くに どろの においがする。
+      tip: warrior.feel.empty? を使うと、前に何かが あるか どうかが わかる。warrior.attack! で それと戦うことができる。１回に１度の動作（！で終わる命令）しかできないことを忘れないように。
+      clue:  warrior.feel.empty?を使ったif/else条件で、warrior.attack!するか、warrior.walk!するかを えらべる。
+    level_003:
+       description: 前よりもっと じめじめ した空気に なってきた。モンスターの大群にちがいない。
+       tip: 命を落とすな! warrior.healthで、君のヘルスを見守る。warrior.rest! で、休けいする。休けいすると最大ヘルスの10%を取りもどせる。
+       clue: 敵がいないときは、ヘルスが みちる まで、warrior.rest!を呼ぶ。それから前へ歩きだす。
+    level_004:
+       description: 弓の引かれる音だ。
+       tip: 今はまだ新しい能力がない。でも、ダメージを 受けているときに休んでは だめだと いうことに注意しよう。 @healthインスタンス変数をほぞんして、毎回くらべる。そしてダメージを受けたかどうかを確かめる。
+       clue: 回の終わりで、@healthに、今のヘルスをセットする。これが、次の回のヘルスよりも大きかったらダメージを受けている。このときは休んではだめだ。
+    level_005: 
+       description: 助けを呼ぶ声だ。味方を助けだそう。
+       tip: warrior.feel.captive? で とらわれた味方が いるか どうかを確かめる。いたら、warrior.rescue! で助けだす。味方を攻撃しては いけない。
+       clue: ダメージを受けたか どうかを いつも確かめると いうことを わすれては だめだ。ダメージを受けていないときに、ヘルスがみちるまで、休むんだ。
+    level_006:
+       description: この部屋では、後ろの壁が遠くにあるような気がする。そして、たくさんの助けを呼ぶ声が聞こえる。
+       tip: "':backward'を引数としてwalk!へ渡すと、後ろへ歩くことができる。feel、rescue! や attack!でも同じだ。矢は遠くまではとどかない。"
+       clue: はなれたところからダメージを受けたときや、攻撃するだけの十分なヘルスがないときは、後ろへ歩く。warrior.feel(:backward).wall?まで後ろへ歩けることも考えたい。
+    level_007: 
+       description: 真正面にかべが、後ろにはすき間があるようだ。
+       tip: 後ろへの攻撃は ききめが ない。向きをかえるには、warrior.feel.wall? と warrior.pivot! を使う。
+    level_008: 
+       description: 魔法使（まほうつかい）いの呪文（じゅもん）が聞こえる。魔法のつえから うち放たれる 魔力に気をつけろ！運よく、弓矢を見つけて手に入れることができた。
+       tip: warrior.lookであたりをたしかめる。warrior.shoot!で矢を放つ。
+       clue: 魔法使いは命取りだが、ヘルスは低い。魔法使いが攻撃できるようになる前に、たおすことだ。
+    level_009:
+       description: 腕前をみがき、身につけたすべてを使う時がきた。
+       tip: 後ろを見ろ。
+       clue: 後ろから攻撃されているときに、矢を放ち続けるだけではだめだ。
+  intermediate: 
+    level_001: 
+      description: なにも聞こえない。とても広そうな部屋だ。部屋にはなにもない。幸運なことに、このタワーの地図を持っている。この地図でタワーの頂上に上るための階段を見つけられそうだ。
+      tip: 階段の方向を得るには、warrior.direction_of_stairsを使う。得た方向を、warrior.walk!にわたすと、その方向へ歩くことができる。
+    level_002:
+      description: ここも広い部屋だ。敵が階段に行かせないようにじゃましてる。
+      tip: 歩いた時と同じように、attack!（攻撃する）と feel（感じる）が、いろいろな方向（:forward（前）、 :left（左） :right（右） :backward（後））にできる。
+      clue: warrior.feel(方向).enemy?を、それぞれの方向で呼んで、敵がそばにいないことを確かめる。もしいたら、攻撃（attack）する。ヘルスが低く、敵がいないときは、warrior.rest!を呼んで休けいする。
+    level_003:
+       description: ベトベトしたものに かこまれたようだ！
+       tip: warrior.bind!(方向)を呼んで、敵をしばりあげることができる。しばられた敵は、とらわれた味方と見分けがつかない。
+       clue: まわりの敵の数を数える。２以上なら、敵をしばりあげる。
+    level_004:
+       description: 耳がとぎすまされ、まわりの状況がわかるようになってきた。耳を立てて、敵と 味方を探すんだ!
+       tip: 敵や味方がいる区域を見つけるために、warrior.listenを使う。どの方向にいるのかをwarrior.direction_ofで確かめる。
+       clue: warrior.walk!(warrior.direction_of(warrior.listen.first))で敵または 味方の方向に歩く。warrior.listen.empty?になったら階段に向かう。
+    level_005: 
+       description: すぐ近くに階段がある。でも すぐに上って いいのかな？
+       tip: より多くのポイントをかく得して、このレベルをクリアする。warrior.feel.stairs? と warrior.feel.empty? でどこに行くのかを決める。
+       clue: 向かおうとしている敵などのユニットと階段のある方向が同じときは、階段にぶつからないで敵に向かうことが できる ところまで、他のなにもない方向へ行く。
+    level_006:
+       description: カチカチカチ。なんだ？ 足に時限爆弾が付けられた味方たちが、とらわれている！
+       tip: space.ticking?がある味方たちを急いで助けだす。時間はない！
+       clue: まずは、敵との戦いをさける。warrior.listen と space.ticking? を使う。そして、急いで味方たちを助ける。
+    level_007: 
+       description: カチカチカチ。まただ。今度はモンスターが行く手をはばんでいる。
+       tip: すばやくモンスターをたおす。そして、味方を助ける。爆弾が爆発する前にだ。モンスターをさけるのは、むずかしい。
+       clue: カチカチしている味方の方向を見つける。行く手をはばむ敵をたおす。まずは君を取り囲んでいる敵をしばりあげる ひつようが ある。
+    level_008: 
+       description: 爆弾の入ったバックを見つけた。これは敵の大群に立ち向かうのに役立つ。
+       tip: ２つの敵が前にいたら(warrior.look)、爆弾を爆発させる。君のヘルスにも気をつける。
+       clue: warrior.lookを呼ぶと、区域の配列が返る。最初の２つに敵がいたら、warrior.detonate!で爆弾を爆発させる。
+    level_009:
+       description: こんなの見たことない。部屋がモンスターでいぱいだ。花火大会のはじまり！
+       tip: カチカチしている味方を炎に巻き込まないように注意する。warrior.distance_ofで味方をよける。
+       clue: 戦う前に、まわりの敵をしばり上げる。爆弾を爆発させる前に、ヘルスを確認すること。
