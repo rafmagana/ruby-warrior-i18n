@@ -1,20 +1,20 @@
 runner:
   options:
     banner: "使い方: rubywarrior [オプション]"
-    directory: あたえられたディレクトリで実行
+    directory: 指定ディレクトリで実行
     level: 英雄経験レベル
     skip: 入力スキップ
     time: 毎回指定秒おくらす
-    help: これを出す
+    help: このヘルプを表示する
 welcome: ようこそRubyウォリアーへ
 directory:
-  not_found: rubywarrior ディレクトリが見つからない。新しく作くる？
-  cannot_continue: ディレクトリがないと、続けることができない。
+  not_found: rubywarrior ディレクトリが見つかりません。新しく作くりますか？
+  cannot_continue: ディレクトリがないと、続けることができません。
 practice_level:
-  unable_not_in_epic_mode: 英雄モードでないとレベルをやることができない。-l オプションを外そう。
-first_level_generated: はじめの レベルの準備ができた。rubywarrior/%1/README ファイルに書いてある説明を読もう。
+  unable_not_in_epic_mode: 英雄モードでないとレベルを指定することはできません。。-l オプションを外してください。
+first_level_generated: はじめの レベルの準備ができました。rubywarrior/%1/README ファイルに書いてある説明を読んでください。
 mode:
-  back_to_normal: 英雄をはじめてから ほかのレベルが追加された。ノーマルモードにもどる。
+  back_to_normal: 英雄をはじめてから ほかのレベルが追加されました。ノーマルモードにもどります。
 level:
   level: レベル
   number: "レベル %1:"
@@ -23,7 +23,7 @@ level:
   clues: このレベルのヒントを読む？
   continue_next: 次のレベルを続ける？
   continue_epic_mode: 英雄モードを続ける？
-  staying_on_current: レベルアップしなかった。次はもっといぱいポイントを かく得しよう。
+  staying_on_current: レベルアップしなかった。次はより多くのポイントを かく得しよう。
   to_practice: "レベルを えらぶ ときは、 -l オプションを使う:  rubywarrior -l 3"
   score: レベルスコア
   grade: レベルグレード
@@ -34,7 +34,7 @@ level:
 profile:
   profile: プロフィール
   new: 新しいプロフィール
-  replace_existing_for_tower: このタワーのプロフィールをかえるよ。いいかな？
+  replace_existing_for_tower: このタワーのプロフィールをかえます。よろしいですか？
   replace_existing: プロフィールの変更。
   not_replacing: プロフィールの変更なし。
 stairs:
@@ -72,13 +72,13 @@ bonus:
 wall: かべ
 nothing: なにもない
 sludge:
-  name: モンスター
+  name: ドロドロモンスター
   first_letter: m
 archer:
   name: 射手
   first_letter: i
 thicksludge:
-  name: 巨大モンスター
+  name: 巨大ドロドロモンスター
   first_letter: M
 captive:
   name: 味方
@@ -114,7 +114,7 @@ feel:
 rest:
   description: 最大ヘルスの10%を取りもどす。ほかは なにもしない。
   receives_health: "休けいで%1ヘルス受け取る。最大ヘルス%2まで"
-  fit_fiddle: はすでに元気最大
+  fit_fiddle: は最大ヘルスになった
 health:
   description: ヘルス数を返えす。
 look:
@@ -161,10 +161,10 @@ add_your_code_here: この後にコードを追加
 towers: 
   beginner: 
     level_001: 
-      description: 目の前に長い廊下。その廊下の向こうには階段がある。階段まで さえぎるものは なにも ない。
+      description: 目の前に長い廊下がある。その廊下の先に階段だ。階段まで さえぎるものは ない。
       tip: Player 'play_turn'メソッドの中から、warrior.walk! を呼び出して前へ進む。
     level_002:
-      description: 暗くて何も見えない。でも 近くに どろの においがする。
+      description: 暗くて何も見えない。でも近くにドロの においがする。
       tip: warrior.feel.empty? を使うと、前に何かが あるか どうかが わかる。warrior.attack! で それと戦うことができる。１回に１度の動作（！で終わる命令）しかできないことを忘れないように。
       clue:  warrior.feel.empty?を使ったif/else条件で、warrior.attack!するか、warrior.walk!するかを えらべる。
     level_003:
