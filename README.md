@@ -8,7 +8,7 @@ You play as a warrior climbing a tall tower to reach the precious Ruby at the to
 
 # i18n-ed version
 
-This is an exact copy of the Ryan Bates' game but I implemented [i18n](http://en.wikipedia.org/wiki/Internationalization_and_localization) to be easily translated and to use it in [KidsRuby](http://en.wikipedia.org/wiki/Internationalization_and_localization).
+This is an exact copy of the Ryan Bates' game but I implemented [i18n](http://en.wikipedia.org/wiki/Internationalization_and_localization) to be easily translated and to use it in [KidsRuby](https://github.com/hybridgroup/kidsruby).
 
 This version includes english as one of the currently supported languages, so `rubywarriorwarrior-i18n` in english and the official game are exactly the same.
 
